@@ -1,17 +1,69 @@
 body {
     background-color: cadetblue;
+    font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+    font-size: 22px;
+    line-height: 1.7;
+    color: #222;
+    padding: 16px;
+    margin: 0;
 }
 
-audio { 
-    width: 300px; 
+h1, h2 {
+    font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+    line-height: 1.2;
+    font-weight: bold;
+    color: #111;
+    margin-top: 28px;
+    margin-bottom: 12px;
+}
+
+p, ul, ol {
+    margin-bottom: 20px;
+    margin-top: 6px;
+}
+
+ul, ol {
+    padding-left: 30px;
+}
+
+audio {
+    width: 350px;          /* increased from 300px */
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
     border-radius: 90px;
-    transform: scale(1.02);
+    transform: scale(1.1); /* slightly larger scale */
+    display: block;
+    margin: 24px auto;
 }
+
+@media (max-width: 600px) {
+    audio {
+        width: 98%;
+        max-width: 400px; /* allow even larger max width on mobile */
+        transform: scale(1.05);
+    }
+}
+
 
 figcaption {
     color: blueviolet;
-    font-size: 20px;
-    margin: 2px 0px 2px 5px;
+    font-size: 22px;
+    margin: 4px 0px 8px 5px;
     font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 18px;
+        padding: 8px;
+    }
+    h1, h2 {
+        font-size: 1.3em;
+    }
+    audio {
+        width: 98%;
+        max-width: 350px;
+    }
+    figcaption {
+        font-size: 18px;
+    }
 }
