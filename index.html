@@ -14,13 +14,18 @@
 </head>
 <body>
 
-    <figure>
-      
-        <audio loop controls>
-            <source src="data.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-    </figure>
+       
+<div class="audio-player">
+  <audio id="myAudio" controls>
+    <source src="data.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <div class="controls">
+    <button type="button" onclick="rewindAudio()">⏪ 10s</button>
+    <button type="button" onclick="fastForwardAudio()">⏩ 10s</button>
+  </div>
+</div>
+
  <h1>Decoding AI Minds: The Science of Interpretability</h1>
   <p>
     The <strong>YouTube video from Anthropic</strong> discusses <em>interpretability</em>, the scientific field dedicated to understanding the internal processes of large language models like Claude.
